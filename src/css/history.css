@@ -1,0 +1,105 @@
+@import url(global.css);
+
+main{
+    padding: 140px 50px;
+}
+
+.history, .container-0{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.history{
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.title-history{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.texto-history{
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-1, .container-2, .container-3, .container-4{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.container-2, .container-4{
+    flex-direction: row-reverse;
+}
+
+.img-section-1{
+    width: 40%;
+    height: 100%;
+    border-radius: 35px;
+    box-shadow: var(--shadow-main);
+}
+
+.bg-text-s1{
+    max-width: 60%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 35px;
+    background: var(--background-container-text);
+    box-shadow: var(--shadow-main);
+}
+
+.container-2 .bg-text-s1, .container-4 .bg-text-s1{
+    background: var(--background-container-text-reverse);
+}
+
+.title-s1{
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.text-s1{
+    font-size: 20px;
+}
+
+@media (width <= 600px) {
+    main{
+        padding: 220px 20px 100px;
+    }
+
+    .container-1, .container-2, .container-3, .container-4{
+        flex-direction: column;
+    }
+
+    .container-2 .bg-text-s1, .container-4 .bg-text-s1{
+        background: var(--background-container-text);
+    }
+
+    .img-section-1{
+        width: 100%;
+    }
+
+    .bg-text-s1{
+        max-width: 100%;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .title-s1, .title-history{
+        font-size: 20px;
+    }
+
+    .text-s1, .texto-history{
+        font-size: 16px;
+    }
+}
